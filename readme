@@ -1,0 +1,56 @@
+# Django Project Setup with Tailwind CSS
+
+## Prerequisites
+Make sure you have the following installed on your system:
+- Python (latest stable version recommended)
+- Node.js & npm (for Tailwind CSS)
+- Virtual Environment (venv)
+
+## Setup Instructions
+
+### 1. Create a Virtual Environment
+```sh
+python -m venv venv
+```
+
+### 2. Activate the Virtual Environment
+- On Windows:
+  ```sh
+  venv\Scripts\activate
+  ```
+- On macOS/Linux:
+  ```sh
+  source venv/bin/activate
+  ```
+
+### 3. Install Required Dependencies
+```sh
+pip install -r requirements.txt
+```
+
+### 4. Install Tailwind CSS
+```sh
+python manage.py tailwind install
+```
+
+### 5. Start Tailwind CSS Watcher
+```sh
+python manage.py tailwind start
+```
+
+### 6. Run the Django Development Server
+```sh
+py manage.py runserver
+```
+
+## Additional Notes
+- Ensure you have `tailwindcss` properly installed in `node_modules` if you face any issues.
+- If encountering issues with Tailwind, try reinstalling dependencies using:
+  ```sh
+  rm -rf node_modules package-lock.json
+  npm install
+  ```
+- Make sure to commit your `requirements.txt` file to track dependencies.
+
+Happy Coding! 🚀
+
