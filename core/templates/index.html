@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block header %}
+Welcome to Django Tailwind, the future of web development!
+{% endblock %}
+
+{% block content %}
+    <div class="text-center">
+        <h2 class="text-3xl font-semibold text-green-500 mb-4">Welcome to the Home Page!</h2>
+        <p class="text-lg text-gray-700">This is a core template built with Django and Tailwind CSS, providing a great starting point for your projects.</p>
+        <div class="mt-6">
+            <a href="/about/" class="bg-green-500 text-white py-2 px-6 rounded-md hover:bg-green-600">Learn More</a>
+        </div>
+    </div>
+{% endblock %}
